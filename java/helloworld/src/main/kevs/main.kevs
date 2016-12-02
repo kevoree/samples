@@ -1,0 +1,2 @@
+add node0: JavaNode/LATEST/LATEST
+add node0.hello: mycompany.HelloWorld/1/LATEST
