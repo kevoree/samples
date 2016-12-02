@@ -1,0 +1,42 @@
+{
+  "name": "kevoree-comp-helloworld",
+  "version": "1.0.0-alpha",
+  "description": "Prints 'Hello World' and 'Bye World!'",
+  "main": "lib/HelloWorld.js",
+  "kevoree": {
+    "namespace": "mycompany"
+  },
+  "scripts": {
+    "prepublish": "npm run lint && grunt",
+    "lint": "eslint lib"
+  },
+  "keywords": [
+    "kevoree",
+    "component"
+  ],
+  "dependencies": {
+    "kevoree-entities": "^9.0.0-alpha"
+  },
+  "devDependencies": {
+    "eslint": "^3.11.1",
+    "grunt": "^1",
+    "grunt-kevoree": "^5",
+    "grunt-kevoree-genmodel": "^3",
+    "grunt-kevoree-registry": "^3",
+    "load-grunt-tasks": "^3"
+  },
+  "repository": "",
+  "author": {
+    "name": "Maxime Tricoire",
+    "email": "max.tricoire@gmail.com"
+  },
+  "license": "LGPL-3.0",
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended"
+    ]
+  }
+}
