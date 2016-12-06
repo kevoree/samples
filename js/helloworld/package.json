@@ -15,7 +15,7 @@
     "component"
   ],
   "dependencies": {
-    "kevoree-entities": "^9.0.0-alpha"
+    "kevoree-entities": "^9.0.0"
   },
   "devDependencies": {
     "eslint": "^3.11.1",
