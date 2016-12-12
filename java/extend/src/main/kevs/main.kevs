@@ -1,0 +1,8 @@
+add node0: JavaNode/LATEST/LATEST
+add node0.printer0: mycompany.DummyPrinter/1/LATEST
+add node0.printer1: mycompany.LessDummyPrinter/1/LATEST
+
+set node0.printer0.times = "2"
+
+set node0.printer1.times = "3"
+set node0.printer1.text = "Custom text!"
