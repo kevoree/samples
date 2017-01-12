@@ -1,0 +1,6 @@
+add node0: JavaNode/LATEST/LATEST
+add node0.stats: mycompany.ModelStats/1/LATEST
+
+// add a way to communicate with the runtime
+add sync: WSGroup/LATEST/LATEST
+attach node0 sync
