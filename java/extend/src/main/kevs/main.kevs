@@ -1,6 +1,6 @@
 add node0: JavaNode/LATEST/LATEST
-add node0.printer0: mycompany.DummyPrinter/1/LATEST
-add node0.printer1: mycompany.LessDummyPrinter/1/LATEST
+add node0.printer0: mycompany.DummyPrinter/1/{java: '1.0.0-SNAPSHOT'}
+add node0.printer1: mycompany.LessDummyPrinter/1/{java: '1.0.0-SNAPSHOT'}
 
 set node0.printer0.times = "2"
 

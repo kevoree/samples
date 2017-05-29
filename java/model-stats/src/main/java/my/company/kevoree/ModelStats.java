@@ -6,7 +6,8 @@ import org.kevoree.annotation.KevoreeInject;
 import org.kevoree.annotation.Start;
 import org.kevoree.annotation.Stop;
 import org.kevoree.api.ModelService;
-import org.kevoree.api.handler.ModelListenerAdapter;
+import org.kevoree.api.handler.AbstractModelListener;
+import org.kevoree.api.handler.UpdateContext;
 import org.kevoree.log.Log;
 
 /**
@@ -14,7 +15,7 @@ import org.kevoree.log.Log;
  * Created by leiko on 12/2/16.
  */
 @ComponentType(version = 1, description = "Prints out current model statistics on every update")
-public class ModelStats extends ModelListenerAdapter {
+public class ModelStats extends AbstractModelListener {
 
     @KevoreeInject
     private ModelService modelService;
@@ -29,8 +30,9 @@ public class ModelStats extends ModelListenerAdapter {
         modelService.unregisterModelListener(this);
     }
 
-    public void modelUpdated() {
-        ContainerRoot model = modelService.getCurrentModel().getModel();
+    @Override
+    public void updateSuccess(UpdateContext context) {
+        ContainerRoot model = context.getProposedModel();
         Log.info("Model has been updated:");
         Log.info("  Instances:");
         Log.info("    - nodes:       {}", model.getNodes().size());

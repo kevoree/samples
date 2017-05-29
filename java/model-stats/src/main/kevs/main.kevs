@@ -1,5 +1,5 @@
 add node0: JavaNode/LATEST/LATEST
-add node0.stats: mycompany.ModelStats/1/LATEST
+add node0.stats: mycompany.ModelStats/1/{java: '1.0.0-SNAPSHOT'}
 
 // add a way to communicate with the runtime
 add sync: WSGroup/LATEST/LATEST

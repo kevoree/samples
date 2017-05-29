@@ -9,16 +9,10 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <properties>
-        <kevoree.version>5.4.0-SNAPSHOT</kevoree.version>
+        <kevoree.version>5.5.0-SNAPSHOT</kevoree.version>
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.kevoree</groupId>
-            <artifactId>org.kevoree.annotation.api</artifactId>
-            <version>${kevoree.version}</version>
-        </dependency>
-
         <dependency>
             <groupId>org.kevoree</groupId>
             <artifactId>org.kevoree.api</artifactId>
@@ -29,7 +23,7 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.kevoree.tools</groupId>
+                <groupId>org.kevoree</groupId>
                 <artifactId>org.kevoree.tools.mavenplugin</artifactId>
                 <version>${kevoree.version}</version>
                 <configuration>
