@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>my.company.kevoree</groupId>
+    <artifactId>helloworld-starter-parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <kevoree.registry.namespace>mycompany</kevoree.registry.namespace>
+    </properties>
+
+    <parent>
+        <groupId>org.kevoree.library</groupId>
+        <artifactId>starter-parent</artifactId>
+        <version>5.5.0-SNAPSHOT</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.kevoree</groupId>
+            <artifactId>org.kevoree.api</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.kevoree</groupId>
+                <artifactId>org.kevoree.tools.mavenplugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!--
+        You can remove this if you are using a RELEASE version of Kevoree
+        But otherwise you need it in order to download the starter-parent pom.xml
+        from the SNAPSHOT repository
+    -->
+    <repositories>
+        <repository>
+            <id>oss-snapshots</id>
+            <url>https://oss.sonatype.org/content/groups/public/</url>
+        </repository>
+    </repositories>
+</project>
