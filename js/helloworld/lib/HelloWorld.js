@@ -1,6 +1,4 @@
-'use strict';
-
-var AbstractComponent = require('kevoree-entities/lib/AbstractComponent');
+const AbstractComponent = require('kevoree-entities/lib/AbstractComponent');
 
 /**
  * Prints &#34;Hello World!&#34; and &#34;Bye World!&#34;

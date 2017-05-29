@@ -20,9 +20,9 @@
   "devDependencies": {
     "eslint": "^3.11.1",
     "grunt": "^1",
-    "grunt-kevoree": "^5",
-    "grunt-kevoree-genmodel": "^3",
-    "grunt-kevoree-registry": "^3",
+    "grunt-kevoree": "^6.0.0-alpha",
+    "grunt-kevoree-genmodel": "^3.0.2",
+    "grunt-kevoree-registry": "^4.0.0-alpha",
     "load-grunt-tasks": "^3"
   },
   "repository": "",
@@ -30,13 +30,5 @@
     "name": "Maxime Tricoire",
     "email": "max.tricoire@gmail.com"
   },
-  "license": "LGPL-3.0",
-  "eslintConfig": {
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "eslint:recommended"
-    ]
-  }
+  "license": "LGPL-3.0"
 }

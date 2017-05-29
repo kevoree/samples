@@ -7,7 +7,7 @@ module.exports = function (grunt) {
     kevoree: {
       main: {
         options: {
-          localModel: 'kevlib.json'
+          runtime: 'next'
         }
       }
     },
