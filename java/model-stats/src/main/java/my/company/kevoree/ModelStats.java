@@ -5,10 +5,10 @@ import org.kevoree.annotation.ComponentType;
 import org.kevoree.annotation.KevoreeInject;
 import org.kevoree.annotation.Start;
 import org.kevoree.annotation.Stop;
-import org.kevoree.api.ModelService;
 import org.kevoree.api.handler.AbstractModelListener;
 import org.kevoree.api.handler.UpdateContext;
 import org.kevoree.log.Log;
+import org.kevoree.service.ModelService;
 
 /**
  *
