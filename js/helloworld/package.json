@@ -7,6 +7,7 @@
     "namespace": "mycompany"
   },
   "scripts": {
+    "start": "grunt kev",
     "prepublish": "npm run lint && grunt",
     "lint": "eslint lib"
   },
@@ -15,12 +16,13 @@
     "component"
   ],
   "dependencies": {
+    "kevoree-cli": "^6.0.0-alpha.4",
     "kevoree-entities": "^9.0.0"
   },
   "devDependencies": {
     "eslint": "^3.11.1",
     "grunt": "^1",
-    "grunt-kevoree": "^6.0.0-alpha",
+    "grunt-kevoree": "^6.0.0-alpha.0",
     "grunt-kevoree-genmodel": "^3.0.2",
     "grunt-kevoree-registry": "^4.0.0-alpha",
     "load-grunt-tasks": "^3"
